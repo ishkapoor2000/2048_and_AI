@@ -219,6 +219,11 @@ class Game(tk.Frame):
             game_over_frame.place(relx = 0.5, rely = 0.5, anchor = "center")
             tk.Label(game_over_frame, text = "Game Over!", bg = c.LOSER_BG,
                      fg = c.GAME_OVER_FONT_COLOR, font = c.GAME_OVER_FONT).pack()
+            self.quit()
+            self.destroy()
+            # print("Game Over!")
+
+# Start the game
 def main():
     Game()
 
